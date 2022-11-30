@@ -33,7 +33,7 @@ public class UserServiceImp implements UserService{
     public void deleteUsers() {
         userDao.deleteUsers();
     }
-    @Transactional
+
     @Override
     public User getUserById(long id) {
         return userDao.getUserById(id);
